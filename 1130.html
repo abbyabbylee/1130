@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /**/
+        .box{
+            /*background-image: linear-gradient(角度方向,色彩,百分比)*/
+            /*背景顏色-線性漸層*/
+            /*後面給顏色到顏色的建層@可給很多種顏色*/
+            /*顏色後面%數是給顯現出來的多寡*/
+            /*因為角度不好所以給斜角度時會有角後面%數小樹點最多增加到.2不然會糊掉*/
+            background-image: linear-gradient(45deg,#ff03ff 30%,#046eff 30.2%,#046eff 60%,#674300 60.2%);
+            width: 300px;
+            height: 300px;
+        }
+        .box2{
+            /*transparent是給顏色透明度,因CSS要做斜角色塊不好做可用漸層方式做*/
+            background-image: linear-gradient(45deg,transparent 30%,#046eff 30.2%,#046eff 60%,transparent 60.2%);
+            width: 300px;
+            height: 300px;
+        } 
+        .box3{
+           /*想做幾個顏色就把百分比分幾等份*/
+           /*如果有角度一樣要後面那個%數視情況加小數點*/
+           /* background-image:linear-gradient(90deg, yellow 25%, #046eff 25%, #046eff 50%, green 50%, green 75%, #000000 75%);*/
+           background-image:linear-gradient(90deg, yellow 25%, transparent 25%, transparent 50%, green 50%, green 75%, #000000 75%);
+           width: 300px;
+           height: 300px;
+        }
+        .box4{
+            /*線性漸層可交互作顏色*/
+            background-image: linear-gradient(0deg,rgba(255,0,0,.25) 50%,rgba(255,0,0,.5) 50%),linear-gradient(90deg,rgba(255,0,0,.25) 50%,rgba(255,0,0,.5) 50%);
+            /*線性漸層交互顏色出現的大小@寬和高*/
+            background-size: 60px 60px;
+            width: 300px;
+            height: 300px;
+        }
+         .box5{
+            /*線性漸層可交互作顏色*/
+            /*線性漸層用斜角度交互顏色出現*/
+            /*利用角度交互顏色出現*/
+            background-image: linear-gradient(45deg,rgba(235, 0, 255, 0.5) 25%,rgba(235, 0, 255,.25) 25%,rgba(235, 0, 255,.25) 50%,rgba(235, 0, 255,.5) 50%,rgba(235, 0, 255,.5) 75%,rgba(235, 0, 255,.25) 75%),linear-gradient(-45deg,rgba(255,0,0,.5) 25%,rgba(255,0,0,.25) 25%,rgba(255,0,0,.25) 50%,rgba(255,0,0,.5) 50%,rgba(255,0,0,.5) 75%,rgba(255,0,0,.25) 75%);
+            background-size: 60px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+   <!--div是一個區塊-->
+    <div class="box"></div>
+    <p></p>
+    <div class="box2"></div>
+     <p></p>
+    <div class="box3"></div>
+    <p></p>
+    <div class="box4"></div>
+    <p></p>
+    <div class="box5"></div>
+    <h1>hellohello!!!</h1>
+    <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint possimus veniam molestiae explicabo beatae rerum, iure assumenda vel sunt ratione, quae inventore quidem voluptates quaerat dolores quis! Blanditiis magni, sunt.
+    </p>
+    
+</body>
+</html>

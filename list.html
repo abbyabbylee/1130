@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul{
+            /*  清單樣式@通常都用大寫一二三和英文字母@其他不用特別記*/
+            list-style-type:cjk-ideographic
+        }
+        
+        h1{
+            /* 邊框一定要有1.顏色2.寬度3.樣式*/
+            /* 原本是border-color和border-width和border-style整個縮寫*/
+            border: #000 5px solid;
+            /*內距=內容和邊寬的距離*/
+            /*內距順序上右下左*/
+            padding: 30px 100px 60px 100px;
+            /*外距=邊寬和網頁的距離*/
+            /*外距順序上右下左*/
+            /* margin: auto;*/
+            /*main {
+                      width: 600px;
+                      margin: 0 auto; 
+                    }            
+            然後你可以設定左右外邊距（margin-left 與 margin-right）為 auto 來使其水平居中。元素在顯示的時候，只會顯示到你所指定的寬度，然後剩餘的寬度平均的散落在左右兩邊的邊距上。*/
+            margin: 30px 60px 100px 30px;
+        }
+        /* 區塊有上下左右外距和內距*/
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            padding: 50px;
+            margin: 50px;
+            }
+        /* 若遇到兩區塊的margin值會取大的那個值*/
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            padding: 50px;
+            margin: 150px;
+            }
+        /* 無寬高所以沒有上下外距*/
+        span{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 50px;
+            padding: 50px;    
+        }
+    </style>
+</head>
+<body>
+    <h1>223333</h1>
+    <h1>223333</h1>
+    <h1>223333</h1>
+    <P></P>
+    <ul>
+       <li>qwer</li>
+       <li>qwer</li>
+       <li>qwer</li>
+       <li>qwer</li>
+       <li>qwer</li>
+       <li>qwer</li>
+       <li>qwer</li>
+    </ul>
+    <div class="box">block</div>
+    <div class="box2">block</div>
+    <div class="box">block</div>
+    <div class="box">block</div>
+    <div class="box">block</div>
+   
+    <span>ppppppp</span>
+    <span>ppppppp</span>
+    <span>ppppppp</span>
+    <span>ppppppp</span>
+    <span>ppppppp</span>
+    
+</body>
+</html>
